@@ -96,29 +96,29 @@ public class Controller1 implements initialize {
     private ImageView getImageViewById(int index) {
         return switch (index) {
             case 0 -> img1;
-            case 1 -> img1;
-            case 2 -> img1;
-            case 3 -> img1;
-            case 4 -> img1;
-            case 5 -> img1;
-            case 6 -> img1;
-            case 7 -> img1;
-            case 8 -> img1;
-            case 9 -> img1;
-            case 10 -> img1;
-            case 11 -> img1;
-            case 12 -> img1;
-            case 13 -> img1;
-            case 14 -> img1;
-            case 15 -> img1;
-            case 16 -> img1;
-            case 17 -> img1;
-            case 18 -> img1;
-            case 19 -> img1;
-            case 20 -> img1;
-            case 21 -> img1;
-            case 22 -> img1;
-            case 23 -> img1;
+            case 1 -> img2;
+            case 2 -> img3;
+            case 3 -> img4;
+            case 4 -> img5;
+            case 5 -> img6;
+            case 6 -> img7;
+            case 7 -> img8;
+            case 8 -> img9;
+            case 9 -> img10;
+            case 10 -> img11;
+            case 11 -> img12;
+            case 12 -> img13;
+            case 13 -> img14;
+            case 14 -> img15;
+            case 15 -> img16;
+            case 16 -> img17;
+            case 17 -> img18;
+            case 18 -> img19;
+            case 19 -> img20;
+            case 20 -> img21;
+            case 21 -> img22;
+            case 22 -> img23;
+            case 23 -> img24;
             default -> null;
         };
     }
@@ -153,7 +153,7 @@ public class Controller1 implements initialize {
     }, Platform::runLater);
     }
     private void clearImageViews() {
-        ImageView[] imageViews = {img1, img1, img1, img1, img1, img1, img1, img1, img1, img1, img1, img1, img1, img1, img1, img1, img1, img1, img1, img1, img1, img1, img1, img1};
+        ImageView[] imageViews = {img1, img2, img3, img4, img5, img6, img7, img8, img9, img10, img11, img12, img13, img14, img15, img16, img17, img18, img19, img20, img21, img22, img23, img24};
         for (ImageView imageView : imageViews) {
             imageView.setImage(null);
         }
