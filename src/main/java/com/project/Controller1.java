@@ -62,7 +62,7 @@ public class Controller1 implements initialize {
     @FXML
     private void loadImage() {
     System.out.println("Loading images...");
-
+    
     img1.setImage(null);
     loadNextImage();
 }
@@ -71,14 +71,10 @@ public class Controller1 implements initialize {
         if (currentImageIndex < imageUrls.size()) {
             String imageUrl = imageUrls.get(currentImageIndex);
             ImageView targetImageView = getImageViewById(currentImageIndex);
-            
-    
             loadImageBackground(imageUrl, (image) -> {
                 System.out.println("Image loaded");
                 targetImageView.setImage(image);
-                
                 contadorProgreso++;
-                
                 System.out.println(contadorProgreso);
                 if (!stopProgressUpdate) {
                     Platform.runLater(() -> {
@@ -132,7 +128,7 @@ public class Controller1 implements initialize {
             try {
                 Random random = new Random();
                 int numeroAleatorio = random.nextInt(46) + 5;
-                numeroAleatorio = numeroAleatorio*1000;
+                numeroAleatorio = numeroAleatorio*10;
                 System.out.println(numeroAleatorio);
                 Thread.sleep(numeroAleatorio);
                 Image image = new Image(getClass().getResource(imageUrl).toString());
